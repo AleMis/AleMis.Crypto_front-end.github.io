@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>CryptoCurrency Analytics</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="amcharts.js" type="text/javascript"></script>
+    <script src="serial.js" type="text/javascript"></script>
+		<script src="amstock.js" type="text/javascript"></script>
+		<script src="dataloader.min.js" type="text/javascript"></script>
+		<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="cryptoscript.js" type="text/javascript"></script>
+</head>
+<body class="window" style="background-color:#FFFFFF">
+<h1 class="entry_title">CryptoCurrency Analytics</h1>
+<div class "chart_currency_dropdown" style="float: left; position:relative">
+  <div class="drop-down-menus">
+    <div  class="time-frame-dropdown">
+      <select id="time-frame-list">
+        <option value="1D" selected>1D</option>
+        <option value="1h">1H</option>
+      </select>
+    </div>
+    <div  class="currency-pair-dropdown">
+      <select id="currency-pair-list">
+        <option value="BTCUSD" selected>BTCUSD</option>
+        <option value="ETHUSD">ETHUSD</option>
+        <option value="BCHUSD">BCHUSD</option>
+        <option value="LTCUSD">LTCUSD</option>
+        <option value="ETCUSD">ETCUSD</option>
+        <option value="ZECUSD">ZECUSD</option>
+        <option value="XMRUSD">XMRUSD</option>
+      </select>
+    </div>
+  </div>
+<div class="chart-background" style="width:1000px; height:600px; position: relative; border: 2px solid #eeeeee;">
+  <div id="chartdiv" class="candlechartdiv" style="width:100%; height:600px;"></div>
+</div>
+
+</body>
+
+</html>
